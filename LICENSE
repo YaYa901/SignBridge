@@ -1,0 +1,11 @@
+SIGNBRIDGE PROJECT RIGHTS NOTICE
+
+All rights in original project code remain with their respective copyright holders.
+This delivery does not grant a general open-source or public redistribution license
+for the project code. The project owner may choose a separate license before
+publishing the project. No ownership of third-party material is claimed.
+
+Third-party videos, fonts and software retain their own licenses. In particular,
+the bundled Egyptian Sign Language videos are licensed CC BY 4.0, not covered by
+the code notice above. See THIRD_PARTY_NOTICES.md and backend/signs.json for
+attribution, license links, original filenames, hashes and changes made.

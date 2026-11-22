@@ -1,0 +1,9 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    { "label": "Setup (install everything)", "type": "shell", "command": "npm run setup", "problemMatcher": [] },
+    { "label": "Dev: API + Web", "type": "shell", "command": "npm run dev", "isBackground": true, "problemMatcher": [], "group": { "kind": "build", "isDefault": true } },
+    { "label": "Test backend", "type": "shell", "command": "npm test", "problemMatcher": [], "group": "test" },
+    { "label": "Build frontend", "type": "shell", "command": "npm run build", "problemMatcher": [] }
+  ]
+}

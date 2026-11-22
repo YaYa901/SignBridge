@@ -1,0 +1,20 @@
+{
+  "name": "signbridge",
+  "version": "2.0.0",
+  "private": true,
+  "description": "SIGNBRIDGE — React (Vite) frontend + FastAPI backend + SQLite database",
+  "scripts": {
+    "setup": "node scripts/run.mjs setup",
+    "dev": "node scripts/run.mjs dev",
+    "dev:api": "node scripts/run.mjs api",
+    "dev:web": "node scripts/run.mjs web",
+    "build": "node scripts/run.mjs build",
+    "start": "node scripts/run.mjs start",
+    "test": "node scripts/run.mjs test",
+    "test:web": "npm --prefix frontend test",
+    "test:e2e": "npm --prefix frontend run test:e2e",
+    "demo": "docker compose up --build",
+    "lint": "npm --prefix frontend run lint"
+  },
+  "engines": { "node": "^22.22.2 || ^24.15.0 || >=26.0.0" }
+}

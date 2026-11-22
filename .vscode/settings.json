@@ -1,0 +1,8 @@
+{
+  "python.terminal.activateEnvironment": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": ["-v", "-s", "backend/tests", "-t", "backend"],
+  "files.eol": "\n",
+  "editor.formatOnSave": false,
+  "search.exclude": { "**/node_modules": true, "**/.venv": true, "**/dist": true }
+}

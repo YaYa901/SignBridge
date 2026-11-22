@@ -1,0 +1,15 @@
+**/node_modules
+**/dist
+**/.venv
+**/data
+**/dev-outbox
+**/__pycache__
+**/.env
+**/.env.*
+!**/.env.example
+**/*.db
+**/*.db-*
+**/.jwt_secret
+.git
+**/test-results
+**/playwright-report
