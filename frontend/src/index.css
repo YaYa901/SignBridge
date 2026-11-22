@@ -1,0 +1,2 @@
+@import "tailwindcss";
+:root{font-family:'Cairo','Inter',sans-serif;background:#f7f9fc;color:#172033;font-synthesis:none;text-rendering:optimizeLegibility}html{min-width:360px;scroll-behavior:smooth}body{margin:0}button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #2563eb88;outline-offset:2px}::selection{background:#dce8ff;color:#142b45}

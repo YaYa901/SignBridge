@@ -1,0 +1,37 @@
+services:
+  signbridge:
+    build: .
+    ports:
+      - '127.0.0.1:8000:8000'
+    environment:
+      ENV: development
+      DATABASE_PATH: /app/data/signbridge.db
+      APP_URL: http://localhost:8000
+      CORS_ORIGINS: http://localhost:8000
+      SMTP_HOST: mailpit
+      SMTP_PORT: '1025'
+      SMTP_STARTTLS: '0'
+      SMTP_DEMO: '1'
+      MAIL_FROM: SignBridge Demo <no-reply@signbridge.test>
+      TRUST_PROXY: '0'
+    depends_on:
+      - mailpit
+    volumes:
+      - signbridge_data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+  mailpit:
+    image: axllent/mailpit:v1.33.0
+    ports:
+      - '127.0.0.1:8025:8025'
+    environment:
+      MP_MAX_MESSAGES: '100'
+      MP_MAX_AGE: 24h
+      MP_DISABLE_VERSION_CHECK: 'true'
+      MP_SMTP_DISABLE_RDNS: 'true'
+    security_opt:
+      - no-new-privileges:true
+volumes:
+  signbridge_data:

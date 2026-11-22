@@ -1,0 +1,2 @@
+# All runtime and test dependencies are pinned in one reproducible lock.
+-r requirements.lock
